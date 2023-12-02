@@ -70,20 +70,36 @@ CREATE TABLE QuoteRequest
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
  insert into QuoteRequest (ClientID, RequestDate, NumberOfTrees, Note, Size, Height, Location, ProximityToHouse, Status)
- values (1, '2022-11-10', 3, 'Need somefjj', 'Large', 12.5, 'backyard', 5.3, 'Accepted'),
-        (2, '2022-11-12', 2, 'tata', 'Medium', 9.2, 'frontyard', 2.7, 'Pending'),
-        (3, '2022-12-10', 1, 'brat', 'Small', 7.8, 'frontyard', 1.5, 'Accepted'),
-        (4, '2022-12-01', 4, 'sestra', 'Medium', 8.6, 'backyard', 3.2, 'Accepted'),
-        (5, '2023-08-12', 5, 'baka', 'Large', 11.4, 'backyard', 4.7, 'Accepted'),
-        (6, '2023-06-02', 2, 'ides', 'Small', 6.9, 'frontyard', 1.8, 'Pending'),
-        (7, '2023-06-04', 1, 'lolas', 'Large', 10.1, 'frontyard', 6.5, 'Accepted'),
-		(8, '2023-03-12', 1, 'samo ne tu', 'Medium', 9.8, 'frontyard', 2.1, 'Accepted'),
-        (9, '2023-03-20', 5, 'Lily Road', 'Large', 12.0, 'backyard', 5.7, 'Accepted'),
-        (10, '2023-04-01', 3, 'Maple Street', 'Medium', 8.5, 'frontyard', 3.5, 'Accepted'),
-        (11, '2023-05-15', 2, 'Oak Avenue', 'Small', 7.0, 'backyard', 2.0, 'Pending'),
-        (12, '2023-06-10', 1, 'Pine Lane', 'Large', 11.2, 'frontyard', 4.8, 'Accepted'),
-        (13, '2023-07-20', 1, 'Birch Street', 'Small', 6.0, 'backyard', 1.5, 'Accepted'),
-        (14, '2023-08-05', 6, 'Willow Avenue', 'Medium', 9.8, 'frontyard', 3.2, 'Accepted');
+ values  (1, '2022-11-10', 7, 'Need somefjj', 'Large', 12.5, 'backyard', 5.3, 'Accepted'),
+    (2, '2022-11-12', 5, 'tata', 'Medium', 9.2, 'frontyard', 2.7, 'Pending'),
+    (3, '2022-12-10', 4, 'brat', 'Small', 7.8, 'frontyard', 1.5, 'Accepted'),
+    (4, '2022-12-01', 8, 'sestra', 'Medium', 8.6, 'backyard', 3.2, 'Accepted'),
+    (5, '2023-08-12', 2, 'baka', 'Large', 11.4, 'backyard', 4.7, 'Accepted'),
+    (6, '2023-06-02', 1, 'ides', 'Small', 6.9, 'frontyard', 1.8, 'Pending'),
+    (7, '2023-06-04', 5, 'lolas', 'Large', 10.1, 'frontyard', 6.5, 'Accepted'),
+    (8, '2023-03-12', 4, 'samo ne tu', 'Medium', 9.8, 'frontyard', 2.1, 'Accepted'),
+    (9, '2023-04-05', 8, 'Lily Road', 'Large', 12.0, 'backyard', 5.7, 'Accepted'),
+    (10, '2023-04-12', 5, 'Maple Street', 'Medium', 8.5, 'frontyard', 3.5, 'Accepted'),
+    (11, '2023-05-01', 5, 'Oak Avenue', 'Small', 7.0, 'backyard', 2.0, 'Pending'),
+    (12, '2023-05-18', 3, 'Pine Lane', 'Large', 11.2, 'frontyard', 4.8, 'Accepted'),
+    (13, '2023-06-10', 2, 'Birch Street', 'Small', 6.0, 'backyard', 1.5, 'Accepted'),
+    (14, '2023-06-25', 5, 'Willow Avenue', 'Medium', 9.8, 'frontyard', 3.2, 'Accepted'),
+    (15, '2023-07-05', 2, 'Cherry Lane', 'Large', 13.5, 'backyard', 6.2, 'Pending'),
+    (16, '2023-07-15', 1, 'Sycamore Street', 'Medium', 8.7, 'frontyard', 2.8, 'Accepted'),
+    (17, '2023-07-25', 4, 'Magnolia Avenue', 'Large', 11.8, 'backyard', 5.1, 'Accepted'),
+    (18, '2023-08-05', 7, 'Cedar Road', 'Small', 7.5, 'frontyard', 1.2, 'Accepted'),
+    (19, '2023-08-15', 1, 'Palm Street', 'Large', 12.3, 'backyard', 4.3, 'Accepted'),
+    (20, '2023-09-01', 1, 'Redwood Drive', 'Medium', 9.1, 'frontyard', 3.9, 'Accepted'),
+    (21, '2023-09-10', 3, 'Poplar Lane', 'Small', 6.5, 'backyard', 1.9, 'Pending'),
+    (22, '2023-09-20', 3, 'Fir Avenue', 'Large', 10.9, 'frontyard', 5.4, 'Accepted'),
+    (23, '2023-10-01', 5, 'Elm Road', 'Medium', 8.4, 'backyard', 2.5, 'Accepted'),
+    (1, '2022-11-10', 3, 'Need somefjj', 'Large', 12.5, 'backyard', 5.3, 'Accepted'),
+    (3, '2022-12-10', 5, 'brat', 'Small', 7.8, 'frontyard', 1.5, 'Accepted'),
+    (4, '2022-12-01', 1, 'sestra', 'Medium', 8.6, 'backyard', 3.2, 'Accepted'),
+    (5, '2023-08-12', 4, 'baka', 'Large', 11.4, 'backyard', 4.7, 'Accepted'),
+    (6, '2023-06-02', 8, 'ides', 'Small', 6.9, 'frontyard', 1.8, 'Pending'),
+    (7, '2023-06-04', 5, 'lolas', 'Large', 10.1, 'frontyard', 6.5, 'Accepted'),
+    (8, '2023-03-12', 6, 'samo ne tu', 'Medium', 9.8, 'frontyard', 2.1, 'Accepted');
             
  select * from QuoteRequest;           
 
@@ -198,18 +214,18 @@ CREATE TABLE OrderOfWork (
 
 INSERT INTO OrderOfWork (RequestID, ClientID, StartDate , EndDate, Status, NumberOfTreesCut, DateOfCut, ContractorID)
 values (1, 1, '2022-11-10', '2022-11-15', 'Started', 10, '2022-11-12', '1'),
-	   (2, 2, '2022-11-12', '2022-11-20', 'In Progress', 15, '2022-11-18', '1'),
-	   (3, 3, '2022-12-10', '2022-12-15', 'Completed', 20, '2022-12-12', '1'),
-       (4, 4, '2022-12-01', '2022-12-10', 'Pending', 8, '2022-12-05', '1'),
-       (5, 5, '2023-08-12', '2023-08-20', 'Started', 12, '2023-08-15', '1'),
-       (6, 6, '2023-06-02', '2023-06-10', 'In Progress', 18, '2023-06-05', '1'),
-       (7, 7, '2023-06-04', '2023-06-12', 'Completed', 25, '2023-06-08', '1'),
-       (8, 8, '2023-03-12', '2023-03-20', 'Completed', 14, '2023-03-15', '1'),
-       (10, 9, '2023-04-05', '2023-04-15', 'Pending', 18, '2023-04-15', '1'),
-       (11, 10, '2023-04-12', '2023-04-25', 'Completed', 25, '2023-4-25', '1'),
-       (12, 11, '2023-05-01', '2023-05-10', 'Pending', 15, '2023-05-01', '1'),
-       (13, 11, '2023-05-18', '2023-06-02', 'Completed', 30, '2023-06-02', '1'),
-       (14, 12, '2023-06-10', '2023-06-20', 'Pending', 20, '2023-06-20', '1');
+       (2, 2, '2022-11-12', '2022-11-20', 'In Progress', 5, '2022-11-18', '1'),
+       (3, 3, '2022-12-10', '2022-12-15', 'Completed', 9, '2022-12-12', '1'),
+       (4, 4, '2022-12-01', '2022-12-10', 'Pending', 9, '2022-12-05', '1'),
+       (5, 5, '2023-08-12', '2023-08-20', 'Started', 6, '2023-08-15', '1'),
+       (6, 6, '2023-06-02', '2023-06-10', 'In Progress', 9, '2023-06-05', '1'),
+       (7, 7, '2023-06-04', '2023-06-12', 'Completed', 10, '2023-06-08', '1'),
+       (8, 8, '2023-03-12', '2023-03-20', 'Completed', 10, '2023-03-15', '1'),
+       (9, 9, '2023-04-05', '2023-04-15', 'Pending', 8, '2023-04-15', '1'),
+       (10, 10, '2023-04-12', '2023-04-25', 'Completed', 5, '2023-4-25', '1'),
+       (11, 11, '2023-05-01', '2023-05-10', 'Pending', 5, '2023-05-01', '1'),
+       (12, 11, '2023-05-18', '2023-06-02', 'Completed', 3, '2023-06-02', '1'),
+       (13, 12, '2023-06-10', '2023-06-20', 'Pending', 2, '2023-06-20', '1');
        
 select * from OrderOfwork;       
        
