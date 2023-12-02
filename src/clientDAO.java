@@ -138,12 +138,12 @@ public class clientDAO {
         connect_func(); // Connect to the database
 
         try {
-            String sql = "SELECT C.ClientID, C.FirstName, C.LastName, SUM(O.NumberOfTreesCut) AS TotalTreesCut " +
-                         "FROM Client C " +
-                         "JOIN OrderOfWork O ON C.ClientID = O.ClientID " +
-                         "GROUP BY C.ClientID, C.FirstName, C.LastName " +
-                         "HAVING TotalTreesCut >= 0 " +  // Adjust the threshold as needed
-                         "ORDER BY TotalTreesCut DESC";
+            String sql = "SELECT c.ClientID, c.FirstName, c.LastName, " +
+                    "SUM(o.NumberOfTreesCut) AS TotalTreesCut " +
+                    "FROM Client c JOIN OrderOfWork o ON c.ClientID = o.ClientID " +
+                    "WHERE o.ContractorID = '1' GROUP BY c.ClientID, c.FirstName, c.LastName " +
+                    "HAVING TotalTreesCut =  SELECT MAX(TreeCount)  FROM SELECT SUM(ow.NumberOfTreesCut) AS TreeCount FROM OrderOfWork ow  WHERE ow.ContractorID = '1' " +
+                    "        GROUP BY ow.ClientID AS MaxTreeCount ORDER BY TotalTreesCut DESC;";
 
             preparedStatement = connect.prepareStatement(sql);
             ResultSet resultSet = preparedStatement.executeQuery();
